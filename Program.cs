@@ -25,6 +25,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
+app.MapGet("/", () => "HNG Stage Zero API is running successfully!");
 
 app.Run();
